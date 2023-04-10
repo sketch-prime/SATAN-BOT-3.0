@@ -10,6 +10,10 @@ public class MessageEventListener extends ListenerAdapter{
     public void onMessageReceived(MessageReceivedEvent event) 
     {
         super.onMessageReceived(event);
+        if(event.getMessage().getContentDisplay().toLowerCase().equals("!respond")) {
+            event.getChannel().sendMessage("I HAVE RESPONDED").queue();
+
+        }
         System.out.printf("[%s]: %s\n", event.getAuthor().getName(), event.getMessage().getContentDisplay());
     }
 }

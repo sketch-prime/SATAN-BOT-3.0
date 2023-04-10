@@ -20,7 +20,6 @@ public class botRun
     {
 
         token TOKEN = new token();
-
         String token = TOKEN.getToken();
 
         final EnumSet<GatewayIntent> intents = EnumSet.allOf(GatewayIntent.class);
