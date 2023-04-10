@@ -10,6 +10,7 @@ import sketch.events.ReadyEventListener;
 
 /**
  * running a shitty discord bot
+ * @author Paul Anderson
  *
  */
 public class botRun 
